@@ -13,7 +13,7 @@
 #     doc.save(f'./结果/{xingming}.docx')
 
 
-import streamlit as st,pandas as pd
+import streamlit as st,pandas as pd,openpyxl
 
 def zongfen(df):
     df1 = df.groupby('班级').agg(**{'总分': ('成绩', 'sum')})
